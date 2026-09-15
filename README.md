@@ -21,12 +21,21 @@ Google Sheet you can sort, filter, and export &mdash; no backend, no database, n
      > our Lakewood pickup point. If you're farther than that, please choose Pickup. We'll text
      > you the pickup address after you order.
    - **If delivery, your full address** &mdash; Short answer, optional (leave blank if picking up)
+   - **How would you like to pay?** &mdash; **Multiple choice**, required. Options: `Cash`,
+     `Zelle`, `Credit card (+3% fee)`. Click **⋮** → **Description** and paste in:
+     > Card payments include a 3% processing fee to cover card fees. We'll contact you by phone
+     > to collect payment — this form doesn't charge your card directly.
    - **Notes / special requests** &mdash; Short answer, optional, "Paragraph" type
 
    This is a single flat form (no branching sections) — simple to build and simple to maintain.
    Since delivery is only offered in a small radius, just eyeball each delivery address against
    your own pickup point when you review orders in the Sheet, and text anyone who's out of range
    to let them know pickup is needed instead.
+
+   **Note on payment:** Google Forms only records which payment method a customer picked — it
+   can't actually charge a card, send a Zelle request, or collect cash. You still contact each
+   customer (their phone number is question 2) to actually collect payment, applying the 3% fee
+   yourself if they chose card.
 4. Click the **Responses** tab, then the green Sheets icon to link a Google Sheet. Every
    submission will now land there automatically, in real time.
 
