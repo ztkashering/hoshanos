@@ -9,14 +9,24 @@ Google Sheet you can sort, filter, and export &mdash; no backend, no database, n
 ### 1. Create the Google Form
 
 1. Go to [forms.google.com](https://forms.google.com) and click **+ Blank form**.
-2. Title it something like "Hoshanos Pre-Order".
-3. Add these questions (all as **Short answer** unless noted):
+2. Title it "Hoshanos Pre-Order".
+3. Add these questions in order (all as **Short answer** unless noted):
    - **Name** (required)
    - **Phone number** (required)
    - **Email** (optional)
-   - **How many sets?** &mdash; make this **Multiple choice** or **Dropdown** with options like 1, 2, 3, 4, 5+ (required)
-   - **Pickup or delivery?** &mdash; **Multiple choice**: Pickup / Delivery
+   - **How many sets?** &mdash; **Dropdown**, options: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10+ (required)
+   - **Pickup or delivery?** &mdash; **Multiple choice**: Pickup / Delivery. Click the **⋮** menu on
+     this question → **Description** and paste in:
+     > Delivery is free for orders of 5+ sets, and $10 for 1-4 sets — but only within 2 miles of
+     > our Lakewood pickup point. If you're farther than that, please choose Pickup. We'll text
+     > you the pickup address after you order.
+   - **If delivery, your full address** &mdash; Short answer, optional (leave blank if picking up)
    - **Notes / special requests** &mdash; Short answer, optional, "Paragraph" type
+
+   This is a single flat form (no branching sections) — simple to build and simple to maintain.
+   Since delivery is only offered in a small radius, just eyeball each delivery address against
+   your own pickup point when you review orders in the Sheet, and text anyone who's out of range
+   to let them know pickup is needed instead.
 4. Click the **Responses** tab, then the green Sheets icon to link a Google Sheet. Every
    submission will now land there automatically, in real time.
 
@@ -33,9 +43,14 @@ Google Sheet you can sort, filter, and export &mdash; no backend, no database, n
 
 Still in `index.html`, find the block marked `EDIT ME` near the top of the page body and update:
 - **Price** per set
-- **Pickup Location**
 - **Order By** date
 - **Set Includes** (how many branches per set, if different from 5)
+
+The delivery policy text (free for 5+ sets, $10 for 1-4, 2-mile zone, pickup-only outside that)
+is already written into the page in the amber `delivery-note` box — edit that text directly if
+the fee, quantity threshold, or zone radius ever changes. Your actual pickup address is
+intentionally **not** published anywhere on the page or in this repo — you text it to each
+customer after they order, exactly as you wanted.
 
 ### 4. Turn on free hosting (GitHub Pages)
 
