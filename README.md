@@ -17,9 +17,9 @@ Google Sheet you can sort, filter, and export &mdash; no backend, no database, n
    - **How many sets?** &mdash; **Dropdown**, options: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10+ (required)
    - **Pickup or delivery?** &mdash; **Multiple choice**: Pickup / Delivery. Click the **⋮** menu on
      this question → **Description** and paste in:
-     > Delivery is free for orders of 5+ sets, and $10 for 1-4 sets — but only within 2 miles of
-     > our Lakewood pickup point. If you're farther than that, please choose Pickup. We'll text
-     > you the pickup address after you order.
+     > Delivery is available for Ridge Area, Raintree, Brookhill, and Coventry only — free for
+     > 5+ sets, $10 for fewer. Outside these areas, please choose Pickup. We'll text you the
+     > pickup address after you order.
    - **If delivery, your full address** &mdash; Short answer, optional (leave blank if picking up)
    - **How would you like to pay?** &mdash; **Multiple choice**, required. Options: `Cash`,
      `Zelle`, `Credit card (+3% fee)`. Click **⋮** → **Description** and paste in:
@@ -28,9 +28,9 @@ Google Sheet you can sort, filter, and export &mdash; no backend, no database, n
    - **Notes / special requests** &mdash; Short answer, optional, "Paragraph" type
 
    This is a single flat form (no branching sections) — simple to build and simple to maintain.
-   Since delivery is only offered in a small radius, just eyeball each delivery address against
-   your own pickup point when you review orders in the Sheet, and text anyone who's out of range
-   to let them know pickup is needed instead.
+   Since delivery is only offered in Ridge Area, Raintree, Brookhill, and Coventry, just check
+   each delivery address against those neighborhoods when you review orders in the Sheet, and
+   text anyone outside them to let them know pickup is needed instead.
 
    **Note on payment:** Google Forms only records which payment method a customer picked — it
    can't actually charge a card, send a Zelle request, or collect cash. You still contact each
