@@ -17,9 +17,9 @@ Google Sheet you can sort, filter, and export &mdash; no backend, no database, n
    - **How many sets?** &mdash; **Dropdown**, options: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10+ (required)
    - **Pickup or delivery?** &mdash; **Multiple choice**: Pickup / Delivery. Click the **⋮** menu on
      this question → **Description** and paste in:
-     > Delivery is available for Ridge Area, Raintree, Brookhill, and Coventry only — free for
-     > 5+ sets, $10 for fewer. Outside these areas, please choose Pickup. We'll text you the
-     > pickup address after you order.
+     > Ridge Area & Raintree get free delivery on any order size. Brookhill & Coventry get free
+     > delivery on 3+ sets ($10 fee for 1-2 sets). Outside these areas, please choose Pickup.
+     > We'll text you the pickup address after you order.
    - **If delivery, your full address** &mdash; Short answer, optional (leave blank if picking up)
    - **How would you like to pay?** &mdash; **Multiple choice**, required. Options: `Cash`,
      `Zelle`, `Credit card (+3% fee)`. Click **⋮** → **Description** and paste in:
