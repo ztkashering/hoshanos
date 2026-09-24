@@ -68,6 +68,20 @@ customer after they order, exactly as you wanted.
 3. Save. GitHub gives you a free URL like `https://ztkashering.github.io/hoshanos/` within a minute or two.
 4. Share that link anywhere &mdash; text, WhatsApp, shul group chat, flyer QR code.
 
+### 5. Turn on free visit tracking (GoatCounter)
+
+Want to see how many people click the link and visit the page? GoatCounter is a free,
+privacy-friendly analytics tool &mdash; no cookie banner needed, doesn't track individuals.
+
+1. Go to [goatcounter.com](https://www.goatcounter.com) and click **Sign up** (free, no credit card).
+2. Pick a site code (e.g. `monseyhoshanos`) &mdash; that becomes your dashboard URL, like
+   `https://monseyhoshanos.goatcounter.com`.
+3. Open `index.html` in this repo, find the line near the top with
+   `data-goatcounter="https://YOURCODE.goatcounter.com/count"`, and replace `YOURCODE` with your
+   real site code.
+4. Commit the change. Within a minute your visits start showing up on your GoatCounter dashboard
+   &mdash; total views, and roughly how many came from your WhatsApp link vs. elsewhere.
+
 ## Tracking orders
 
 Every submission appears instantly as a new row in the linked Google Sheet (Responses tab →
